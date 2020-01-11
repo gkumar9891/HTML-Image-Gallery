@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  padding: 0px;
+	margin: 0px;
+ }
+
+*{
+  box-sizing: border-box;
+}
+
+
+.container 
+ {
+   display: inline-block;
+ }
+
+.text1
+ {
+   float: right;
+   width: 350px;
+   position: relative;
+   top: 20px;
+   left: 0px;	
+   padding-left: 15px;	
+   box-shadow: gray 2px -2px 13px 1px;
+ } 
+ 
+.text1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -50px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+.text2
+ {
+   float: left;
+   width: 350px;
+   padding-left: 15px;
+   position: relative;
+   top: -4px;
+   left: 34px;
+   box-shadow: grey -2px 2px 13px 1px;;
+ } 
+.text2::after {
+   content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -50px;
+  border-width: 50px;
+  border-style: solid;
+  border-color: transparent transparent transparent white;
+}
+
+.head 
+ {
+   padding-left: 30px;
+   font-size: 3vw;
+   border-left: 3px solid red;
+ }
+
+.img 
+ {
+   margin-left: 34px;
+   margin-top: -4px;
+ }
+
+ 
+  .container2 
+  {
+	margin-left: 15px;
+  }
+ 
+ @media screen 	and (max-width:600px)
+ {
+ .text1 
+	{
+		position: relative;
+		top: -5px;
+		left: -83px;
+		
+	}
+ }
+ 
+
+</style>
+</head>
+<body>
+<div class="con">
+<div class="container">
+	<img src="src\img20.jpg" alt="hello" height="250" width="auto">
+	<div class="text1">
+	<h3 class="head"><b>Hello how are you i am fine</b></h3>
+	<p>.tooltip .tooltiptext::after {content: " ";position: absolute;top: 100%; /* At the bottom of the tooltip */left: 50%;  margin-left: -5px;border-width: 5px;border-style: solid;border-color: black transparent transparent transparent;}</p>
+	</div>
+</div>
+
+
+<div class="container container2">
+	<div class="text2">
+	<h3 class="head">Hello how are you i am fine</h3>
+	<p>.tooltip .tooltiptext::after {content: " ";position: absolute;top: 100%; /* At the bottom of the tooltip */left: 50%;  margin-left: -5px;border-width: 5px;border-style: solid;border-color: black transparent transparent transparent;}</p>
+	</div>
+	<img class="img" src="src\img21.jpg" alt="hello" height="250" width="auto">
+</div>
+</div>
+</body>
+</html>
+
