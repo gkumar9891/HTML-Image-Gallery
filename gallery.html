@@ -15,16 +15,13 @@ body {
 
 .container 
  {
-   display: inline-block;
+   display: flex;
  }
 
 .text1
  {
-   float: right;
    width: 350px;
    position: relative;
-   top: 20px;
-   left: 0px;	
    padding-left: 15px;	
    box-shadow: gray 2px -2px 13px 1px;
  } 
@@ -70,8 +67,7 @@ body {
 .img 
  {
    margin-left: 34px;
-   margin-top: -4px;
- }
+   }
 
  
   .container2 
@@ -95,9 +91,9 @@ body {
 </head>
 <body>
 <div class="con">
-<div class="container">
-	<img src="img20.jpg" alt="hello" height="250" width="auto">
-	<div class="text1">
+<div class="container container1">
+	<img src="image/img20.jpg" alt="hello" height="300px" width="30%">
+	<div class="text1"  style="align-self: flex-end">
 	<h3 class="head"><b>Hello how are you i am fine</b></h3>
 	<p>.tooltip .tooltiptext::after {content: " ";position: absolute;top: 100%; /* At the bottom of the tooltip */left: 50%;  margin-left: -5px;border-width: 5px;border-style: solid;border-color: black transparent transparent transparent;}</p>
 	</div>
@@ -109,7 +105,7 @@ body {
 	<h3 class="head">Hello how are you i am fine</h3>
 	<p>.tooltip .tooltiptext::after {content: " ";position: absolute;top: 100%; /* At the bottom of the tooltip */left: 50%;  margin-left: -5px;border-width: 5px;border-style: solid;border-color: black transparent transparent transparent;}</p>
 	</div>
-	<img class="img" src="img21.jpg" alt="hello" height="250" width="auto">
+	<img class="img" src="image/img21.jpg" alt="hello" height="250" width="auto">
 </div>
 </div>
 </body>
